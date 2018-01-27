@@ -1,0 +1,26 @@
+ <div fxLayout="row" fxLayoutAlign="center center" style="height: 100vh;">
+        
+        <div class="login-img" fxFlex="39">
+        	<img routerLink="/acompanhamento" class="my-log-img" src="assets/images/login_1.png">
+        </div>
+
+	 <div fxLayout="column" fxLayoutAlign="center center" fxFlex="61">        
+        
+      <div style="width: 17%;">
+  			<img routerLink="/acompanhamento" class="my-logo" src="assets/images/logo-login.png">
+  		</div>
+
+        <mat-form-field fxFlexOffset="5" class="my-inputs">
+              <input matInput name="email" placeholder="Insira seu email" >
+        </mat-form-field>
+
+        <mat-form-field class="my-inputs">
+              <input matInput name="senha" placeholder="Senha" >
+        </mat-form-field>
+
+        <my-button-orange fxFlexOffset="2" label="ENTRAR" class="enter-button" (click)="userForm(userCadForm)"></my-button-orange>
+    
+        <span routerLink="/esqueci-senha" fxFlexOffset="7" class="forgot-password">Esqueceu sua senha?</span>
+    </div> 
+
+  </div>
